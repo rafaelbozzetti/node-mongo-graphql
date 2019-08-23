@@ -1,9 +1,9 @@
-const user = require('./User');
+const User = require('./User');
 
 module.exports = {
     Query: {
-        users: () => user.find(),
-        user: (_, { id } ) => user.findById(id),
+        users: () => User.find(),
+        user: (_, { id } ) => User.findById(id),
     },
 
     Mutation: {
